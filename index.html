@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SSU Combat Robotics</title>
+<meta name="description" content="A student team at Sonoma State University that designs, builds, and fights remote-controlled combat robots.">
+<meta property="og:title" content="SSU Combat Robotics">
+<meta property="og:description" content="A student team at Sonoma State University that designs, builds, and fights remote-controlled combat robots.">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&amp;family=Big+Shoulders+Display:wght@600;700;800&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <path id="chev-back" d="M8,14 L44,14 L88,60 L44,106 L8,106 L52,60 Z"/>
+  <path id="chev-fore" d="M48,14 L84,14 L128,60 L84,106 L48,106 L92,60 Z"/>
+</defs></svg>
+
+<canvas id="bg" aria-hidden="true"></canvas>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="mark" href="index.html">
+      <svg class="mark-glyph" viewBox="0 0 136 120" role="img" aria-label="SSU Combat Robotics"><use href="#chev-back" fill="#004C97"/><use href="#chev-fore" fill="#EFB532"/></svg>
+      <span class="mark-type"><span class="mt1">Sonoma State</span><span class="mt2">Combat Robotics</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="robots.html">Robots</a></li>
+      <li><a href="sponsors.html">Sponsors</a></li>
+      <li><a href="join.html">Join</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page">
+  <div class="sheet">
+    <div class="pagebody">
+
+      <div class="hero">
+        <p class="mono" style="color:var(--gold)">Sonoma State University</p>
+        <h1>Sonoma State's <em>combat robotics</em> team</h1>
+        <p class="lede">A student team that designs, builds, and fights remote-controlled combat
+          robots. The same sport you have seen on BattleBots, at the weight classes a student team
+          can actually run.</p>
+        <div class="cta-row">
+          <a class="btn btn-solid" href="about.html">Learn more</a>
+          <a class="btn btn-ghost" href="sponsors.html">Sponsor the team</a>
+        </div>
+      </div>
+
+      <section class="sec">
+        <h2>The sport</h2>
+        <div class="body">
+          <p>Two remote-controlled machines fight inside a sealed arena until one stops moving or
+            time runs out. If both are still running, judges score the match on damage, aggression
+            and control.</p>
+          <p>It is a design sport before it is anything else. Whatever a team got right or wrong
+            shows up in the first thirty seconds of a match, which makes it one of the fastest
+            engineering feedback loops available to a student.</p>
+        </div>
+      </section>
+
+      <section class="sec">
+        <h2>What the club does</h2>
+        <div class="body">
+          <p>Members design a robot, build it, drive it, and repair it between matches. The
+            chassis, the wiring, the weapon and the driving are all done by students.</p>
+          <p>We build to <strong>SPARC</strong>, the construction standard used across combat
+            robotics, so what leaves this room is legal at real events rather than only legal
+            here.</p>
+          <a class="more" href="robots.html">What we build &rarr;</a>
+        </div>
+      </section>
+
+      <section class="sec">
+        <h2>Who can join</h2>
+        <div class="body">
+          <p>Every major, every year. There is no application, no tryout, and no requirement that
+            you have built anything before. Most people arrive having never soldered.</p>
+          <a class="more" href="join.html">How to join &rarr;</a>
+        </div>
+      </section>
+
+      <section class="sec">
+        <h2>Get involved</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Sponsor the team</h3>
+            <p>Equipment, materials, manufacturing time, and funding all shorten the distance
+              between a design and a working machine.</p>
+            <a class="btn btn-solid" href="sponsors.html">Sponsorship</a>
+          </div>
+          <div class="card">
+            <h3>Join the club</h3>
+            <p>Come to a meeting. Build a robot. Break it, fix it, and bring it back.</p>
+            <a class="btn btn-ghost" href="join.html">How to join</a>
+          </div>
+        </div>
+        <p class="season">This season: building toward our first showcase, December 1 to 4, 2026.</p>
+      </section>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <p style="color:var(--ink)"><strong>SSU Combat Robotics Club</strong></p>
+      <p><a href="mailto:stephensos@sonoma.edu">stephensos@sonoma.edu</a><br>
+        <a href="https://discord.gg/CHxzKvj9N" target="_blank" rel="noopener noreferrer">Discord</a><br>
+        Meetings Thursdays at 5:00 PM</p>
+    </div>
+    <div>
+      <p class="disc">We are a student organization acting independently of Sonoma State
+        University. We take full responsibility for our organization and this website.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/arena.js"></script>
+</body>
+</html>

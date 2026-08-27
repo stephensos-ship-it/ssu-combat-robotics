@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Robots | SSU Combat Robotics</title>
+<meta name="description" content="What we build: an open-source one-pound antweight, printed and assembled by students.">
+<meta property="og:title" content="Robots | SSU Combat Robotics">
+<meta property="og:description" content="What we build: an open-source one-pound antweight, printed and assembled by students.">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&amp;family=Big+Shoulders+Display:wght@600;700;800&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <path id="chev-back" d="M8,14 L44,14 L88,60 L44,106 L8,106 L52,60 Z"/>
+  <path id="chev-fore" d="M48,14 L84,14 L128,60 L84,106 L48,106 L92,60 Z"/>
+</defs></svg>
+
+<canvas id="bg" aria-hidden="true"></canvas>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="mark" href="index.html">
+      <svg class="mark-glyph" viewBox="0 0 136 120" role="img" aria-label="SSU Combat Robotics"><use href="#chev-back" fill="#004C97"/><use href="#chev-fore" fill="#EFB532"/></svg>
+      <span class="mark-type"><span class="mt1">Sonoma State</span><span class="mt2">Combat Robotics</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="robots.html" aria-current="page">Robots</a></li>
+      <li><a href="sponsors.html">Sponsors</a></li>
+      <li><a href="join.html">Join</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page">
+  <div class="sheet">
+    <div class="pagebody">
+
+      <div class="hero">
+        <p class="mono" style="color:var(--gold)">Our robot</p>
+        <h1>Everybody builds <em>Force Knight</em></h1>
+        <p class="lede">One open-source design, one parts list, one shelf of spares that fit
+          everybody's machine. When your robot does something strange, four other people have
+          already seen it do that.</p>
+      </div>
+
+      <section class="sec">
+        <h2>The build sheet</h2>
+        <dl class="rows">
+          <div class="row"><dt>Weight class</dt><dd>1 lb antweight, plastic</dd></div>
+          <div class="row"><dt>Chassis</dt><dd>3D-printed PLA+, printed on campus</dd></div>
+          <div class="row"><dt>Drive</dt><dd>Four N20 gearmotors, four-wheel drive</dd></div>
+          <div class="row"><dt>Brains</dt><dd>Malenki-Nano receiver and ESC on one board</dd></div>
+          <div class="row"><dt>Battery</dt><dd>2S LiPo, 300 mAh</dd></div>
+          <div class="row"><dt>Weapon</dt><dd>Wedge and forks. A spinner bolts onto the same chassis later.</dd></div>
+          <div class="row"><dt>Ruleset</dt><dd>SPARC v1.6, so it's legal at real events</dd></div>
+        </dl>
+      </section>
+
+      <section class="sec">
+        <h2>Why this one</h2>
+        <div class="body">
+          <p>It's free, it's documented down to the print settings, and people who aren't us have
+            won with it. That combination is rarer than it sounds.</p>
+          <p>It also takes a bolt-on spinner without redesigning anything, so the club can argue
+            about weapons later without throwing away the robots we built first.</p>
+        </div>
+      </section>
+
+      <section class="sec">
+        <h2>The weight classes</h2>
+        <div class="classes">
+          <div class="cls"><b>150 g</b><span>Fairyweight. Pocket-sized, cheap, good for practice.</span></div>
+          <div class="cls us"><b>1 lb</b><span>Antweight. What we build. Cheap enough to own, real enough to hurt.</span></div>
+          <div class="cls"><b>3 lb</b><span>Beetleweight. The obvious next step. Ask us again next year.</span></div>
+          <div class="cls"><b>250 lb</b><span>The class you see on television. Out of scope for us.</span></div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <p style="color:var(--ink)"><strong>SSU Combat Robotics Club</strong></p>
+      <p><a href="mailto:stephensos@sonoma.edu">stephensos@sonoma.edu</a><br>
+        <a href="https://discord.gg/CHxzKvj9N" target="_blank" rel="noopener noreferrer">Discord</a><br>
+        Meetings Thursdays at 5:00 PM</p>
+    </div>
+    <div>
+      <p class="disc">We are a student organization acting independently of Sonoma State
+        University. We take full responsibility for our organization and this website.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/arena.js"></script>
+</body>
+</html>
