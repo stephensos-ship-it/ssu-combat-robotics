@@ -41,6 +41,16 @@ Things that need filling in or updating over time:
   and on `sponsors.html`. **Change this to the club email as soon as one exists**, or the
   site stops working the day the founder's account is closed.
 
+## The address
+
+The site is at **https://ssucombatrobotics.org**, registered at Porkbun and pointed at
+GitHub Pages. The old `stephensos-ship-it.github.io/ssu-combat-robotics/` URL still works
+and redirects here.
+
+**The domain renews for about $12 a year.** If nobody pays it, the site goes dark and the
+name becomes available for anyone to register. Make sure auto-renew is on and that the card
+behind it is not one that expires with a graduating student.
+
 ## Publishing changes
 
 ```
