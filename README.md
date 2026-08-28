@@ -32,8 +32,9 @@ browser exactly as it will look live.
 Things that need filling in or updating over time:
 
 - **`[STILL BEING VOTED ON]`** on `join.html` — replace with the dues amount once the club votes.
-- **`[TBD]`** on `index.html` — the showcase venue.
-- **Room number** on `index.html` and `join.html` — currently "Room TBD".
+- **`Room TBD`** on `join.html` — replace once a room is booked. (There is no venue
+  placeholder on `index.html`; the showcase venue is simply not mentioned there yet, so add
+  it to the season line if you want it public.)
 - **The season line** at the bottom of `index.html` — one sentence naming the current
   season's event. Update it once a year; the rest of the homepage is written to last.
 - **`$1,500`** on `sponsors.html` — the yearly program need. Re-check it each year.
