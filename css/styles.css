@@ -151,39 +151,35 @@
     margin: 0;
   }
 
-  .sponsors {
+  /* Sponsor logo wall. Deliberately logos-and-links only: what each sponsor gave is a
+     commercial detail, and collegiate sponsor pages do not publish it. Do not re-add
+     per-sponsor descriptions or tier labels. */
+  /* Uniform tracks, centred as a block, so logos stay the same size as sponsors are added
+     and the grid never strands one logo on its own row edge. No panel behind them: the
+     reference (Berkeley) sits logos directly on the page background. */
+  .sponsor-wall {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
-    gap: 14px; margin-top: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 215px));
+    justify-content: center; align-items: center; justify-items: center;
+    gap: 34px 46px;
+    margin-top: 32px;
   }
 
-  .sponsor {
-    display: flex; flex-direction: column; gap: 13px; padding: 26px 24px;
-    background: rgba(20, 26, 35, .9);
-    border: 1px solid var(--line);
-    border-top: 3px solid var(--gold);
+  .sponsor-logo {
+    display: flex; align-items: center; min-height: 58px;
+    text-decoration: none;
+    opacity: .9; transition: opacity .16s ease;
   }
+  .sponsor-logo:hover, .sponsor-logo:focus-visible { opacity: 1; }
+  .sponsor-logo img { max-height: 56px; width: auto; max-width: 100%; }
 
-  .sponsor .role {
-    margin: 0;
-    font-family: "IBM Plex Mono", monospace; font-size: 11px;
-    letter-spacing: .09em; text-transform: uppercase; color: var(--gold);
-  }
-
-  /* Fixed height so a card with a logo and a card with a wordmark line up.
-     A logo lockup reads lighter per pixel of height than solid display type, so the
-     image is set taller than the wordmark's cap height on purpose — otherwise the
-     sponsor who actually sent artwork renders smaller than the one who did not. */
-  .sponsor-mark { display: flex; align-items: center; min-height: 64px; }
-  .sponsor-mark img { max-height: 56px; width: auto; max-width: 100%; }
-  .sponsor-mark .wordmark {
+  /* Typographic stand-in for a sponsor who has not sent artwork yet. */
+  .sponsor-logo .wordmark {
     font-family: "Big Shoulders Display", sans-serif;
-    font-weight: 800; font-size: 25px; line-height: 1.05;
-    text-transform: uppercase; letter-spacing: .03em; color: var(--ink);
+    font-weight: 800; font-size: 27px; line-height: 1;
+    text-transform: uppercase; letter-spacing: .03em;
+    color: var(--ink);
   }
-
-  .sponsor p:not(.role) { margin: 0; color: var(--soft); flex: 1; }
-  .sponsor a { align-self: flex-start; font-size: 13px; }
 
   .body { max-width: min(60ch, 100%); }
   .body p { margin: 0 0 14px; color: var(--soft); text-shadow: 0 1px 10px rgba(10, 14, 20, .8); }
