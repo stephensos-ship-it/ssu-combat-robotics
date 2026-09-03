@@ -38,9 +38,10 @@ Things that need filling in or updating over time:
 - **The season line** at the bottom of `index.html` — one sentence naming the current
   season's event. Update it once a year; the rest of the homepage is written to last.
 - **`$1,500`** on `sponsors.html` — the yearly program need. Re-check it each year.
-- **Contact email** — currently `stephensos@sonoma.edu` in the footer of all five pages
-  and on `sponsors.html`. **Change this to the club email as soon as one exists**, or the
-  site stops working the day the founder's account is closed.
+- **Contact email** — `combatrobotics@sonoma.edu`, in the footer of all five pages and on
+  `sponsors.html`. ✅ Switched off the founder's personal address on 2026-09-03, so the site
+  no longer breaks the day his account closes. Keep it that way: **never put a personal
+  address back on this site.**
 
 ## The address
 
