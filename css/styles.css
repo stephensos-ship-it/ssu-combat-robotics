@@ -157,16 +157,18 @@
   /* Uniform tracks, centred as a block, so logos stay the same size as sponsors are added
      and the grid never strands one logo on its own row edge. No panel behind them: the
      reference (Berkeley) sits logos directly on the page background. */
+  /* Flex, not grid: a grid left-aligns a short last row, which stranded the fourth logo
+     under the first. Wrapped flex rows are each centred, so 3 + 1 and 3 + 2 both sit right. */
   .sponsor-wall {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(170px, 215px));
-    justify-content: center; align-items: center; justify-items: center;
+    display: flex; flex-wrap: wrap;
+    justify-content: center; align-items: center;
     gap: 34px 46px;
     margin-top: 32px;
   }
 
   .sponsor-logo {
-    display: flex; align-items: center; min-height: 58px;
+    display: flex; align-items: center; justify-content: center; min-height: 58px;
+    flex: 0 1 215px;
     text-decoration: none;
     opacity: .9; transition: opacity .16s ease;
   }
